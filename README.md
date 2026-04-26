@@ -1,6 +1,6 @@
 # FireStorm — Android Reverse Engineering Writeup
 
-**Plateforme :** PWNSEC  
+ 
 **Niveau :** Medium  
 **Techniques :** Reverse Android (Jadx), Hooking Java (Frida), Authentification Firebase  
 
@@ -38,7 +38,7 @@ adb root
 adb install FireStorm.apk
 ```
 
-![App Firestorm installee](screenshots/app_firestorm.png)
+
 
 ---
 
@@ -111,7 +111,7 @@ adb shell "/data/local/tmp/frida-server &"
 frida-ps -U
 ```
 
-![Frida server lance](screenshots/frida_server_launch.png)
+![Frida server lance](screenshots/frida_server_launch.webp)
 
 ---
 
@@ -156,7 +156,7 @@ frida -U -f com.pwnsec.firestorm -l frida_firestorm.js
 
 ### Resultat — Mot de passe obtenu
 
-![Frida password extrait](screenshots/frida_password.png)
+![Frida password extrait](screenshots/frida_results.webp)
 
 ```
 [+] Mot de passe Firebase : C7_dotpsC7t7f_._In_i.IdttpaofoaIIdIdnndIfC
@@ -203,7 +203,7 @@ pip install pyrebase4
 python get_flag.py
 ```
 
-![Flag recupere](screenshots/flag_result.png)
+![Flag recupere](screenshots/flag_result.webp)
 
 ---
 
@@ -250,4 +250,4 @@ firestorm-writeup/
 
 ---
 
-Writeup realise dans le cadre du lab PWNSEC — FireStorm Challenge
+Writeup realise dans le cadre du lab 18 — FireStorm Challenge
